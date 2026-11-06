@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In – PhoneHub</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' fill='%232563eb'%3E%3Cpath d='M16 2c-2.2 0-4 1.8-4 4v2h-4c-.6 0-1 .4-1 1v12c0 .6.4 1 1 1h8c.6 0 1-.4 1-1V10h7v9c0 .6.4 1 1 1h8c.6 0 1-.4 1-1V4c0-.6-.4-1-1-1h-7V7c0-2.2-1.8-4-4-4zm0 2c1.1 0 2 .9 2 2v2H4V7c0-1.1.9-2 2-2h9z'/%3E%3C/svg%3E">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="ph-nav navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">
+      <i class="bi bi-phone-fill"></i> PhoneHub
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav mx-auto gap-1">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="Phones.html">Phones</a></li>
+        <li class="nav-item"><a class="nav-link" href="Accessories.html">Accessories</a></li>
+        <li class="nav-item"><a class="nav-link" href="Deals.html">Deals</a></li>
+      </ul>
+      <div class="nav-actions d-flex align-items-center gap-2">
+        <button class="btn-icon" title="Search"><i class="bi bi-search"></i></button>
+        <a href="cart.html" class="btn-icon" title="Cart" style="text-decoration:none">
+          <i class="bi bi-cart3"></i>
+          <span class="cart-count" style="display:none">0</span>
+        </a>
+        <a href="sign in.html" class="btn-signin">Sign In</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- AUTH PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <nav aria-label="breadcrumb" class="mb-3">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active">Sign In</li>
+      </ol>
+    </nav>
+    <h1>Welcome Back</h1>
+    <p>Sign in to your account to track orders and manage your profile.</p>
+  </div>
+</section>
+
+<!-- AUTH CARD -->
+<section class="py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-6 col-xl-5">
+        <div class="auth-wrap">
+          <div class="auth-card">
+            <div class="auth-logo">
+              <i class="bi bi-phone-fill"></i> PhoneHub
+            </div>
+            <h2>Sign In</h2>
+            <p class="auth-sub">Enter your email and password below to access your account.</p>
+
+            <form id="signin-form" novalidate>
+              <div class="form-group input-icon-wrap">
+                <label for="signin-email">Email Address</label>
+                <i class="bi bi-envelope"></i>
+                <input type="email" id="signin-email" name="email" class="form-input" placeholder="you@example.com" required>
+              </div>
+
+              <div class="form-group input-icon-wrap">
+                <label for="signin-password">Password</label>
+                <i class="bi bi-lock-fill"></i>
+                <input type="password" id="signin-password" name="password" class="form-input" placeholder="••••••••" required>
+                <div class="mt-2 text-end">
+                  <a href="#" style="font-size:.82rem;color:var(--primary);font-weight:600">Forgot password?</a>
+                </div>
+              </div>
+
+              <button type="submit" class="btn-auth">Sign In</button>
+            </form>
+
+             <div class="divider">or continue with</div>
+        <div class="d-grid gap-2">
+          <button class="social-btn d-flex align-items-center justify-content-center gap-2" type="button" onclick="socialLogin('Google')">
+            <svg width="18" height="18" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.15 0 5.64 1.08 7.56 2.85l5.63-5.63C33.73 3.52 29.27 1.5 24 1.5 14.82 1.5 7.06 7.28 4 15.23l6.57 5.1C12.16 13.8 17.57 9.5 24 9.5z"/><path fill="#4285F4" d="M46.5 24.5c0-1.64-.15-3.22-.42-4.74H24v9.01h12.64c-.55 2.95-2.2 5.45-4.68 7.13l7.19 5.59C43.48 37.65 46.5 31.58 46.5 24.5z"/><path fill="#FBBC05" d="M10.57 28.67A14.53 14.53 0 0 1 9.5 24c0-1.62.28-3.2.77-4.67L3.7 14.23A22.48 22.48 0 0 0 1.5 24c0 3.63.87 7.06 2.4 10.1l6.67-5.43z"/><path fill="#34A853" d="M24 46.5c5.27 0 9.7-1.74 12.93-4.73l-7.19-5.59c-1.74 1.17-3.97 1.86-5.74 1.86-6.43 0-11.84-4.3-13.43-10.07l-6.67 5.43C7.06 40.72 14.82 46.5 24 46.5z"/></svg>
+            Continue with Google
+          </button>
+        </div>
+
+            <div class="auth-switch">
+              Don't have an account? <a href="#">Create an account</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-4">
+        <div class="footer-brand"><i class="bi bi-phone-fill"></i> PhoneHub</div>
+        <p class="footer-desc">Nigeria's most trusted destination for smartphones, accessories, and unbeatable mobile deals since 2020.</p>
+      </div>
+      <div class="col-6 col-lg-2">
+        <div class="footer-heading">Shop</div>
+        <ul>
+          <li><a href="Phones.html">Smartphones</a></li>
+          <li><a href="Accessories.html">Accessories</a></li>
+          <li><a href="Deals.html">Deals</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <div class="footer-heading">Support</div>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Track Order</a></li>
+          <li><a href="#">Returns</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <div class="footer-heading">Contact</div>
+        <ul>
+          <li><a href="tel:+2348001234567"><i class="bi bi-telephone me-2"></i>+234 800 123 4567</a></li>
+          <li><a href="mailto:hello@phonehub.ng"><i class="bi bi-envelope me-2"></i>hello@phonehub.ng</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 PhoneHub Nigeria. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/app.js"></script>
+<script>
+  document.getElementById('signin-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const email = document.getElementById('signin-email').value;
+    const password = document.getElementById('signin-password').value;
+    if (!email || !password) return;
+    signIn({ email, name: email.split('@')[0], signedInAt: new Date().toISOString() });
+    showToast('Welcome back! Redirecting...');
+    setTimeout(() => {
+      window.location.href = 'index.html';
+    }, 1200);
+  });
+</script>
+</body>
+</html>

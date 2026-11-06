@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessories – PhoneHub</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' fill='%232563eb'%3E%3Cpath d='M16 2c-2.2 0-4 1.8-4 4v2h-4c-.6 0-1 .4-1 1v12c0 .6.4 1 1 1h8c.6 0 1-.4 1-1V10h7v9c0 .6.4 1 1 1h8c.6 0 1-.4 1-1V4c0-.6-.4-1-1-1h-7V7c0-2.2-1.8-4-4-4zm0 2c1.1 0 2 .9 2 2v2H4V7c0-1.1.9-2 2-2h9z'/%3E%3C/svg%3E">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- ANNOUNCEMENT BAR -->
+<div class="announce-bar">
+  🎧 Free earbuds with every phone purchase over ₦500k!
+  <a href="Phones.html"> Shop Phones →</a>
+</div>
+
+<!-- NAVBAR -->
+<nav class="ph-nav navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html"><i class="bi bi-phone-fill"></i> PhoneHub</a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav mx-auto gap-1">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="Phones.html">Phones</a></li>
+        <li class="nav-item"><a class="nav-link active" href="Accessories.html">Accessories</a></li>
+        <li class="nav-item"><a class="nav-link" href="Deals.html">Deals</a></li>
+      </ul>
+      <div class="nav-actions d-flex align-items-center gap-2">
+        <button class="btn-icon"><i class="bi bi-search"></i></button>
+        <a href="cart.html" class="btn-icon" style="text-decoration:none">
+          <i class="bi bi-cart3"></i>
+          <span class="cart-count" style="display:none">0</span>
+        </a>
+        <a href="sign in.html" class="btn-signin">Sign In</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <nav aria-label="breadcrumb" class="mb-3">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active">Accessories</li>
+      </ol>
+    </nav>
+    <h1>Phone Accessories</h1>
+    <p>Protect, power, and personalise your device with our premium collection.</p>
+  </div>
+</section>
+
+<!-- CATEGORY BANNERS -->
+<section class="py-5">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="acc-banner" style="min-height:160px;display:flex;flex-direction:column;justify-content:flex-end">
+          <i class="bi bi-headphones" style="font-size:2.8rem;opacity:.3;margin-bottom:12px"></i>
+          <h4 style="font-weight:800;margin-bottom:4px">Audio</h4>
+          <p style="color:#94a3b8;font-size:.85rem;margin-bottom:14px">Earbuds, headphones & speakers</p>
+          <a href="#audio" class="btn-hero-outline" style="width:fit-content;font-size:.82rem;padding:8px 18px">Browse Audio</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="acc-banner" style="min-height:160px;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(135deg,#1e293b,#7c3aed)">
+          <i class="bi bi-battery-charging" style="font-size:2.8rem;opacity:.3;margin-bottom:12px"></i>
+          <h4 style="font-weight:800;margin-bottom:4px">Power</h4>
+          <p style="color:#c4b5fd;font-size:.85rem;margin-bottom:14px">Chargers, cables & power banks</p>
+          <a href="#power" class="btn-hero-outline" style="width:fit-content;font-size:.82rem;padding:8px 18px">Browse Power</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="acc-banner" style="min-height:160px;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(135deg,#1e293b,#f97316)">
+          <i class="bi bi-shield-check" style="font-size:2.8rem;opacity:.3;margin-bottom:12px"></i>
+          <h4 style="font-weight:800;margin-bottom:4px">Protection</h4>
+          <p style="color:#fed7aa;font-size:.85rem;margin-bottom:14px">Cases, covers & screen guards</p>
+          <a href="#protection" class="btn-hero-outline" style="width:fit-content;font-size:.82rem;padding:8px 18px">Browse Cases</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AUDIO SECTION -->
+<section class="py-section bg-white" id="audio">
+  <div class="container">
+    <div class="section-header d-flex justify-content-between align-items-end flex-wrap gap-3">
+      <div>
+        <span class="section-label">Audio</span>
+        <h2 class="section-title">Earbuds & Headphones</h2>
+      </div>
+    </div>
+    <div class="row g-4">
+
+      <div class="col-sm-6 col-lg-3">
+        <div class="product-card">
+          <div class="img-wrap" style="padding:32px">
+            <span class="badge-wrap"><span class="badge-new">New</span></span>
+            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80" alt="AirPods Pro">
+          </div>
+          <div class="card-body">
+            <div class="brand-tag">Apple</div>
+            <h5>AirPods Pro 2nd Gen</h5>
+            <div class="specs">ANC · 30h battery · USB-C</div>
+            <div class="rating"><span class="stars">★★★★★</span><span class="count">(520)</span></div>
+            <div class="price-row">
+              <span class="price">₦155,000</span>
+              <span class="price-old">₦180,000</span>
+              <span class="discount-pct">-14%</span>
+            </div>
+            <button class="btn-cart" data-id="airpodspro2" data-name="AirPods Pro 2nd Gen" data-price="155000" data-img="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=200&q=80">
+              <i class="bi bi-cart-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-3">
+        <div class="product-card">
+          <div class="img-wrap" style="padding:32px">
+            <span class="badge-wrap"><span class="badge-hot">Hot</span></span>
+            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+            <img src="https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=600&q=80" alt="Sony WH-1000XM5">
+          </div>
+          <div class="card-body">
+            <div class="brand-tag">Sony</div>
+            <h5>WH-1000XM5</h5>
+            <div class="specs">Over-ear ANC · 30h battery</div>
+            <div class="rating"><span class="stars">★★★★★</span><span class="count">(810)</span></div>
+            <div class="price-row">
+              <span class="price">₦220,000</span>
+              <span class="price-old">₦260,000</span>
+              <span class="discount-pct">-15%</span>
+            </div>
+            <button class="btn-cart" data-id="sonyxm5" data-name="Sony WH-1000XM5" data-price="220000" data-img="https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=200&q=80">
+              <i class="bi bi-cart-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-3">
+        <div class="product-card">
+          <div class="img-wrap" style="padding:32px">
+            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+            <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?auto=format&fit=crop&w=600&q=80" alt="Samsung Buds3 Pro">
+          </div>
+          <div class="card-body">
+            <div class="brand-tag">Samsung</div>
+            <h5>Galaxy Buds3 Pro</h5>
+            <div class="specs">ANC · 26h battery · IP57</div>
+            <div class="rating"><span class="stars">★★★★☆</span><span class="count">(304)</span></div>
+            <div class="price-row">
+              <span class="price">₦95,000</span>
+              <span class="price-old">₦115,000</span>
+              <span class="discount-pct">-17%</span>
+            </div>
+            <button class="btn-cart" data-id="buds3pro" data-name="Samsung Galaxy Buds3 Pro" data-price="95000" data-img="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?auto=format&fit=crop&w=200&q=80">
+              <i class="bi bi-cart-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-3">
+        <div class="product-card">
+          <div class="img-wrap" style="padding:32px">
+            <span class="badge-wrap"><span class="badge-sale">Sale</span></span>
+            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+            <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=600&q=80" alt="JBL Tune 770NC">
+          </div>
+          <div class="card-body">
+            <div class="brand-tag">JBL</div>
+            <h5>Tune 770NC</h5>
+            <div class="specs">Wireless ANC · 70h battery</div>
+            <div class="rating"><span class="stars">★★★★☆</span><span class="count">(198)</span></div>
+            <div class="price-row">
+              <span class="price">₦55,000</span>
+              <span class="price-old">₦72,000</span>
+              <span class="discount-pct">-24%</span>
+            </div>
+            <button class="btn-cart" data-id="jbl770nc" data-name="JBL Tune 770NC" data-price="55000" data-img="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=200&q=80">
+              <i class="bi bi-cart-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sony WH-CH720N -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="product-card">
+          <div class="img-wrap" style="padding:32px">
+            <span class="badge-wrap"><span class="badge-hot">Hot</span></span>
+            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+            <img src="https://images.unsplash.com/photo-1618366712010-f4ae9c6475b3?auto=format&fit=crop&w=600&q=80" alt="Sony WH-CH720N">
+          </div>
+          <div class="card-body">
+            <div class="brand-tag">Sony</div>
+            <h5>WH-CH720N</h5>
+            <div class="specs">Over-ear ANC · 35h battery</div>
+            <div class="rating"><span class="stars">★★★★☆</span><span class="count">(267)</span></div>
+            <div class="price-row">
+              <span class="price">₦78,000</span>
+              <span class="price-old">₦95,000</span>
+              <span class="discount-pct">-18%</span>
+            </div>
+            <button class="btn-cart" data-id="sonych720n" data-name="Sony WH-CH720N" data-price="78000" data-img="https://images.unsplash.com/photo-1618366712010-f4ae9c6475b3?auto=format&fit=crop&w=200&q=80">
+              <i class="bi bi-cart-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- JBL Flip 6 -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="product-card">
+          <div class="img-wrap" style="padding:32px">
+            <span class="badge-wrap"><span class="badge-new">New</span></span>
+            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+            <img src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=600&q=80" alt="JBL Flip 6">
+          </div>
+          <div class="card-body">
+            <div class="brand-tag">JBL</div>
+            <h5>Flip 6 Speaker</h5>
+            <div class="specs">Waterproof · 12h playtime</div>
+            <div class="rating"><span class="stars">★★★★★</span><span class="count">(312)</span></div>
+            <div class="price-row">
+              <span class="price">₦85,000</span>
+              <span class="price-old">₦100,000</span>
+              <span class="discount-pct">-15%</span>
+            </div>
+            <button class="btn-cart" data-id="jblflip6" data-name="JBL Flip 6 Speaker" data-price="85000" data-img="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=200&q=80">
+              <i class="bi bi-cart-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- POWER SECTION -->
+<section class="py-section" id="power">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Power</span>
+      <h2 class="section-title">Chargers & Power Banks</h2>
+    </div>
+    <div class="row g-4">
+
+      <div class="col-sm-6 col-lg-3">
+        <div class="product-card">
+          <div class="img-wrap" style="padding:32px">
+            <span class="badge-wrap"><span class="badge-hot">Hot</span></span>
+            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+            <img src="https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?auto=format&fit=crop&w=600&q=80" alt="Anker charger">
+          </div>
+          <div class="card-body">
+            <div class="brand-tag">Anker</div>
+            <h5>Anker 67W GaN Charger</h5>
+            <div class="specs">2× USB-C + 1× USB-A · Compact</div>
+            <div class="rating"><span class="stars">★★★★★</span><span class="count">(412)</span></div>
+            <div class="price-row">
+              <span class="price">₦28,000</span>
+              <span class="price-old">₦35,000</span>
+              <span class="discount-pct">-20%</span>
+            </div>
+            <button class="btn-cart" data-id="anker67w" data-name="Anker 67W GaN Charger" data-price="28000" data-img="https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?auto=format&fit=crop&w=200&q=80">
+              <i class="bi bi-cart-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-3">
+        <div class="product-card">
+          <div class="img-wrap" style="padding:32px">
+            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+            <img src="https://images.unsplash.com/photo-1585338107529-13afc5f02586?auto=format&fit=crop&w=600&q=80" alt="Power bank">
+          </div>
+          <div class="card-body">
+            <div class="brand-tag">Baseus</div>
+            <h5>Baseus 30,000mAh</h5>
+            <div class="specs">65W PD · 3 outputs · Display</div>
+            <div class="rating"><span class="stars">★★★★★</span><span class="count">(257)</span></div>
+            <div class="price-row">
+              <span class="price">₦42,000</span>
+              <span class="price-old">₦52,000</span>
+              <span class="discount-pct">-19%</span>
+            </div>
+            <button class="btn-cart" data-id="baseus30k" data-name="Baseus 30,000mAh Power Bank" data-price="42000" data-img="https://images.unsplash.com/photo-1585338107529-13afc5f02586?auto=format&fit=crop&w=200&q=80">
+              <i class="bi bi-cart-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-3">
+        <div class="product-card">
+          <div class="img-wrap" style="padding:32px">
+            <span class="badge-wrap"><span class="badge-new">New</span></span>
+            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+            <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=600&q=80" alt="Wireless charger">
+          </div>
+          <div class="card-body">
+            <div class="brand-tag">Belkin</div>
+            <h5>Belkin 3-in-1 MagSafe</h5>
+            <div class="specs">Phone + Watch + Buds · 15W</div>
+            <div class="rating"><span class="stars">★★★★☆</span><span class="count">(89)</span></div>
+            <div class="price-row">
+              <span class="price">₦38,000</span>
+              <span class="price-old">₦45,000</span>
+              <span class="discount-pct">-16%</span>
+            </div>
+            <button class="btn-cart" data-id="belkin3in1" data-name="Belkin 3-in-1 MagSafe Charger" data-price="38000" data-img="https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=200&q=80">
+              <i class="bi bi-cart-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-3">
+        <div class="product-card">
+          <div class="img-wrap" style="padding:32px">
+            <span class="badge-wrap"><span class="badge-sale">Sale</span></span>
+            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+            <img src="https://images.unsplash.com/photo-1601972599720-36938d4ecd31?auto=format&fit=crop&w=600&q=80" alt="USB-C cable">
+          </div>
+          <div class="card-body">
+            <div class="brand-tag">Anker</div>
+            <h5>Anker 240W USB-C Cable</h5>
+            <div class="specs">2m · Braided · Fast charge</div>
+            <div class="rating"><span class="stars">★★★★★</span><span class="count">(631)</span></div>
+            <div class="price-row">
+              <span class="price">₦8,500</span>
+              <span class="price-old">₦12,000</span>
+              <span class="discount-pct">-29%</span>
+            </div>
+            <button class="btn-cart" data-id="anker240w" data-name="Anker 240W USB-C Cable" data-price="8500" data-img="https://images.unsplash.com/photo-1601972599720-36938d4ecd31?auto=format&fit=crop&w=200&q=80">
+              <i class="bi bi-cart-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Anker 737 Power Bank -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="product-card">
+          <div class="img-wrap" style="padding:32px">
+            <span class="badge-wrap"><span class="badge-hot">Hot</span></span>
+            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+            <img src="https://images.unsplash.com/photo-1591376730683-a2f04e5cf4d5?auto=format&fit=crop&w=600&q=80" alt="Anker Power Bank">
+          </div>
+          <div class="card-body">
+            <div class="brand-tag">Anker</div>
+            <h5>Anker 737 Power Bank</h5>
+            <div class="specs">24,000mAh · 140W · Display</div>
+            <div class="rating"><span class="stars">★★★★★</span><span class="count">(189)</span></div>
+            <div class="price-row">
+              <span class="price">₦85,000</span>
+              <span class="price-old">₦105,000</span>
+              <span class="discount-pct">-19%</span>
+            </div>
+            <button class="btn-cart" data-id="anker737" data-name="Anker 737 Power Bank" data-price="85000" data-img="https://images.unsplash.com/photo-1591376730683-a2f04e5cf4d5?auto=format&fit=crop&w=200&q=80">
+              <i class="bi bi-cart-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- UGREEN 100W GaN Charger -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="product-card">
+          <div class="img-wrap" style="padding:32px">
+            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+            <img src="https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?auto=format&fit=crop&w=600&q=80" alt="UGREEN Charger">
+          </div>
+          <div class="card-body">
+            <div class="brand-tag">UGREEN</div>
+            <h5>UGREEN 100W GaN Charger</h5>
+            <div class="specs">4 ports · PPS · Compact</div>
+            <div class="rating"><span class="stars">★★★★★</span><span class="count">(234)</span></div>
+            <div class="price-row">
+              <span class="price">₦35,000</span>
+              <span class="price-old">₦42,000</span>
+              <span class="discount-pct">-17%</span>
+            </div>
+            <button class="btn-cart" data-id="ugreen100w" data-name="UGREEN 100W GaN Charger" data-price="35000" data-img="https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?auto=format&fit=crop&w=200&q=80">
+              <i class="bi bi-cart-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Belkin BoostCharge -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="product-card">
+          <div class="img-wrap" style="padding:32px">
+            <span class="badge-wrap"><span class="badge-new">New</span></span>
+            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+            <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=600&q=80" alt="Belkin Charger">
+          </div>
+          <div class="card-body">
+            <div class="brand-tag">Belkin</div>
+            <h5>Belkin BoostCharge Pro</h5>
+            <div class="specs">3-in-1 · MagSafe · 15W</div>
+            <div class="rating"><span class="stars">★★★★☆</span><span class="count">(89)</span></div>
+            <div class="price-row">
+              <span class="price">₦45,000</span>
+              <span class="price-old">₦55,000</span>
+              <span class="discount-pct">-18%</span>
+            </div>
+            <button class="btn-cart" data-id="belkinboost" data-name="Belkin BoostCharge Pro" data-price="45000" data-img="https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=200&q=80">
+              <i class="bi bi-cart-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROTECTION SECTION -->
+<section class="py-section bg-white" id="protection">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Protection</span>
+      <h2 class="section-title">Cases & Screen Guards</h2>
+    </div>
+    <div class="row g-4">
+
+      <div class="col-sm-6 col-lg-3">
+        <div class="product-card">
+          <div class="img-wrap" style="padding:32px">
+            <span class="badge-wrap"><span class="badge-hot">Hot</span></span>
+            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+            <img src="https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?auto=format&fit=crop&w=600&q=80" alt="Phone case">
+          </div>
+          <div class="card-body">
+            <div class="brand-tag">Spigen</div>
+            <h5>Spigen Ultra Hybrid</h5>
+            <div class="specs">For iPhone 16 Pro · Clear</div>
+            <div class="rating"><span class="stars">★★★★★</span><span class="count">(730)</span></div>
+            <div class="price-row">
+              <span class="price">₦12,000</span>
+              <span class="price-old">₦16,000</span>
+              <span class="discount-pct">-25%</span>
+            </div>
+            <button class="btn-cart" data-id="spigenuh" data-name="Spigen Ultra Hybrid Case" data-price="12000" data-img="https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?auto=format&fit=crop&w=200&q=80">
+              <i class="bi bi-cart-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-3">
+        <div class="product-card">
+          <div class="img-wrap" style="padding:32px">
+            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+            <img src="https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?auto=format&fit=crop&w=600&q=80" alt="Screen protector">
+          </div>
+          <div class="card-body">
+            <div class="brand-tag">Spigen</div>
+            <h5>Tempered Glass 2-Pack</h5>
+            <div class="specs">9H hardness · Anti-fingerprint</div>
+            <div class="rating"><span class="stars">★★★★☆</span><span class="count">(445)</span></div>
+            <div class="price-row">
+              <span class="price">₦6,500</span>
+              <span class="price-old">₦9,000</span>
+              <span class="discount-pct">-28%</span>
+            </div>
+            <button class="btn-cart" data-id="tempglass" data-name="Spigen Tempered Glass 2-Pack" data-price="6500" data-img="https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?auto=format&fit=crop&w=200&q=80">
+              <i class="bi bi-cart-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-3">
+        <div class="product-card">
+          <div class="img-wrap" style="padding:32px">
+            <span class="badge-wrap"><span class="badge-new">New</span></span>
+            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+            <img src="https://images.unsplash.com/photo-1565849904461-04a58ad377e0?auto=format&fit=crop&w=600&q=80" alt="Leather case">
+          </div>
+          <div class="card-body">
+            <div class="brand-tag">Nomad</div>
+            <h5>Nomad Modern Leather</h5>
+            <div class="specs">For Samsung S25 · Brown</div>
+            <div class="rating"><span class="stars">★★★★★</span><span class="count">(91)</span></div>
+            <div class="price-row">
+              <span class="price">₦22,000</span>
+              <span class="price-old">₦28,000</span>
+              <span class="discount-pct">-21%</span>
+            </div>
+            <button class="btn-cart" data-id="nomadle" data-name="Nomad Modern Leather Case" data-price="22000" data-img="https://images.unsplash.com/photo-1565849904461-04a58ad377e0?auto=format&fit=crop&w=200&q=80">
+              <i class="bi bi-cart-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-3">
+        <div class="product-card">
+          <div class="img-wrap" style="padding:32px">
+            <span class="badge-wrap"><span class="badge-sale">Sale</span></span>
+            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80" alt="Ring holder">
+          </div>
+          <div class="card-body">
+            <div class="brand-tag">ESR</div>
+            <h5>ESR MagSafe Ring Holder</h5>
+            <div class="specs">360° rotation · Universal fit</div>
+            <div class="rating"><span class="stars">★★★★☆</span><span class="count">(188)</span></div>
+            <div class="price-row">
+              <span class="price">₦5,000</span>
+              <span class="price-old">₦8,000</span>
+              <span class="discount-pct">-38%</span>
+            </div>
+            <button class="btn-cart" data-id="esrring" data-name="ESR MagSafe Ring Holder" data-price="5000" data-img="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=200&q=80">
+              <i class="bi bi-cart-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- OtterBox Defender -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="product-card">
+          <div class="img-wrap" style="padding:32px">
+            <span class="badge-wrap"><span class="badge-hot">Hot</span></span>
+            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+            <img src="https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?auto=format&fit=crop&w=600&q=80" alt="OtterBox Defender">
+          </div>
+          <div class="card-body">
+            <div class="brand-tag">OtterBox</div>
+            <h5>Defender Series Case</h5>
+            <div class="specs">For iPhone 15 · Multi-layer</div>
+            <div class="rating"><span class="stars">★★★★★</span><span class="count">(445)</span></div>
+            <div class="price-row">
+              <span class="price">₦18,000</span>
+              <span class="price-old">₦24,000</span>
+              <span class="discount-pct">-25%</span>
+            </div>
+            <button class="btn-cart" data-id="otterbox" data-name="OtterBox Defender Series Case" data-price="18000" data-img="https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?auto=format&fit=crop&w=200&q=80">
+              <i class="bi bi-cart-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ESR HaloLock -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="product-card">
+          <div class="img-wrap" style="padding:32px">
+            <span class="badge-wrap"><span class="badge-new">New</span></span>
+            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+            <img src="https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?auto=format&fit=crop&w=600&q=80" alt="ESR HaloLock">
+          </div>
+          <div class="card-body">
+            <div class="brand-tag">ESR</div>
+            <h5>HaloLock Case</h5>
+            <div class="specs">MagSafe compatible · Clear</div>
+            <div class="rating"><span class="stars">★★★★☆</span><span class="count">(178)</span></div>
+            <div class="price-row">
+              <span class="price">₦14,000</span>
+              <span class="price-old">₦18,000</span>
+              <span class="discount-pct">-22%</span>
+            </div>
+            <button class="btn-cart" data-id="esrhalo" data-name="ESR HaloLock Case" data-price="14000" data-img="https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?auto=format&fit=crop&w=200&q=80">
+              <i class="bi bi-cart-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-4">
+        <div class="footer-brand"><i class="bi bi-phone-fill"></i> PhoneHub</div>
+        <p class="footer-desc">Nigeria's most trusted destination for smartphones, accessories, and unbeatable mobile deals since 2020.</p>
+        <div class="footer-socials">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-twitter-x"></i></a>
+          <a href="#"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2">
+        <div class="footer-heading">Shop</div>
+        <ul>
+          <li><a href="Phones.html">Smartphones</a></li>
+          <li><a href="Accessories.html">Accessories</a></li>
+          <li><a href="Deals.html">Deals</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <div class="footer-heading">Support</div>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Track Order</a></li>
+          <li><a href="#">Returns</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <div class="footer-heading">Newsletter</div>
+        <p style="color:#64748b;font-size:.88rem;margin-bottom:14px">Get exclusive deals in your inbox.</p>
+        <form class="newsletter-form" style="max-width:100%">
+          <input type="email" placeholder="Your email" required>
+          <button type="submit">Go</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 PhoneHub Nigeria. All rights reserved.</span>
+      <div class="footer-payments">
+        <span class="pay-badge">Paystack</span>
+        <span class="pay-badge">Flutterwave</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

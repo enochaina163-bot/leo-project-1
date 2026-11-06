@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deals – PhoneHub</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' fill='%232563eb'%3E%3Cpath d='M16 2c-2.2 0-4 1.8-4 4v2h-4c-.6 0-1 .4-1 1v12c0 .6.4 1 1 1h8c.6 0 1-.4 1-1V10h7v9c0 .6.4 1 1 1h8c.6 0 1-.4 1-1V4c0-.6-.4-1-1-1h-7V7c0-2.2-1.8-4-4-4zm0 2c1.1 0 2 .9 2 2v2H4V7c0-1.1.9-2 2-2h9z'/%3E%3C/svg%3E">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- ANNOUNCEMENT BAR -->
+<div class="announce-bar" style="background:#dc2626">
+  🔥 Flash Sale LIVE – Deals end when stock runs out!
+</div>
+
+<!-- NAVBAR -->
+<nav class="ph-nav navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html"><i class="bi bi-phone-fill"></i> PhoneHub</a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav mx-auto gap-1">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="Phones.html">Phones</a></li>
+        <li class="nav-item"><a class="nav-link" href="Accessories.html">Accessories</a></li>
+        <li class="nav-item"><a class="nav-link active" href="Deals.html">Deals</a></li>
+      </ul>
+      <div class="nav-actions d-flex align-items-center gap-2">
+        <button class="btn-icon"><i class="bi bi-search"></i></button>
+        <a href="cart.html" class="btn-icon" style="text-decoration:none">
+          <i class="bi bi-cart3"></i>
+          <span class="cart-count" style="display:none">0</span>
+        </a>
+        <a href="sign in.html" class="btn-signin">Sign In</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero" style="background:linear-gradient(135deg,#7f1d1d,#dc2626)">
+  <div class="container">
+    <nav aria-label="breadcrumb" class="mb-3">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active">Deals</li>
+      </ol>
+    </nav>
+    <div class="d-flex align-items-center gap-3 mb-3">
+      <span style="background:#fff;color:#dc2626;font-size:.75rem;font-weight:800;padding:5px 12px;border-radius:6px;letter-spacing:1px">LIVE NOW</span>
+      <span style="color:#fca5a5;font-size:.88rem">Limited time offers</span>
+    </div>
+    <h1>Mega Deals & Offers</h1>
+    <p>Unbeatable prices on top phones and accessories. Move fast — stock is limited.</p>
+    <!-- Global Countdown -->
+    <div class="d-flex gap-3 mt-4 flex-wrap" id="promo-countdown">
+      <div class="count-box"><div class="num">00</div><div class="lbl">Days</div></div>
+      <div class="count-box"><div class="num">00</div><div class="lbl">Hrs</div></div>
+      <div class="count-box"><div class="num">00</div><div class="lbl">Min</div></div>
+      <div class="count-box"><div class="num">00</div><div class="lbl">Sec</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED DEAL BANNER -->
+<section class="py-5">
+  <div class="container">
+    <div class="promo-banner">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <span class="promo-badge">⚡ Deal of the Day</span>
+          <h2>iPhone 16 Pro Max<br>Save ₦150,000 Today</h2>
+          <p>Our best-selling flagship at its lowest price ever. Only 12 units left at this price.</p>
+          <div class="countdown" id="deal-countdown-1">
+            <div class="count-box"><div class="num">00</div><div class="lbl">Days</div></div>
+            <div class="count-box"><div class="num">00</div><div class="lbl">Hrs</div></div>
+            <div class="count-box"><div class="num">00</div><div class="lbl">Min</div></div>
+            <div class="count-box"><div class="num">00</div><div class="lbl">Sec</div></div>
+          </div>
+          <button class="btn-promo"
+            onclick="addToCart('iphone16pm-deal','iPhone 16 Pro Max (Deal)',1250000,'https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=200&q=80')">
+            Add to Cart – ₦1,250,000 <i class="bi bi-cart-plus"></i>
+          </button>
+        </div>
+        <div class="col-lg-5 text-center mt-4 mt-lg-0 d-none d-lg-block">
+          <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=500&q=80"
+            alt="iPhone 16 Pro Max"
+            style="max-height:280px;object-fit:contain;filter:drop-shadow(0 20px 40px rgba(0,0,0,.4))">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DEALS GRID -->
+<section class="py-section bg-white">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">All Deals</span>
+      <h2 class="section-title">Today's Hot Deals</h2>
+    </div>
+    <div class="row g-4">
+
+      <!-- Deal 1 -->
+      <div class="col-sm-6 col-lg-4">
+        <div class="deal-card">
+          <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80" class="deal-img" alt="Samsung S25 Ultra">
+          <div class="deal-body">
+            <div class="deal-timer" id="deal-countdown-2">
+              <div class="time-box">00<span>days</span></div>
+              <div class="time-box">00<span>hrs</span></div>
+              <div class="time-box">00<span>min</span></div>
+              <div class="time-box">00<span>sec</span></div>
+            </div>
+            <div class="brand-tag">Samsung</div>
+            <h5 style="font-weight:700;margin-bottom:6px">Galaxy S25 Ultra</h5>
+            <div style="font-size:.8rem;color:#64748b;margin-bottom:10px">512GB · Phantom Black · 5G</div>
+            <div class="price-row" style="display:flex;gap:8px;align-items:baseline;margin-bottom:6px">
+              <span class="price" style="font-size:1.15rem;font-weight:800;color:#2563eb">₦1,050,000</span>
+              <span class="price-old" style="font-size:.85rem;color:#94a3b8;text-decoration:line-through">₦1,180,000</span>
+              <span class="discount-pct" style="font-size:.75rem;font-weight:700;color:#16a34a;background:#dcfce7;padding:2px 7px;border-radius:6px">-11%</span>
+            </div>
+            <div class="deal-progress"><div class="bar" style="width:68%"></div></div>
+            <div class="deal-sold">68 of 100 sold</div>
+            <button class="btn-cart" style="margin-top:14px" data-id="sams25u-deal" data-name="Samsung Galaxy S25 Ultra" data-price="1050000" data-img="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=200&q=80">
+              <i class="bi bi-cart-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Deal 2 -->
+      <div class="col-sm-6 col-lg-4">
+        <div class="deal-card">
+          <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80" class="deal-img" alt="AirPods Pro">
+          <div class="deal-body">
+            <div class="deal-timer">
+              <div class="time-box">03<span>days</span></div>
+              <div class="time-box">12<span>hrs</span></div>
+              <div class="time-box">45<span>min</span></div>
+              <div class="time-box">20<span>sec</span></div>
+            </div>
+            <div class="brand-tag">Apple</div>
+            <h5 style="font-weight:700;margin-bottom:6px">AirPods Pro 2nd Gen</h5>
+            <div style="font-size:.8rem;color:#64748b;margin-bottom:10px">ANC · 30h battery · USB-C</div>
+            <div class="price-row" style="display:flex;gap:8px;align-items:baseline;margin-bottom:6px">
+              <span class="price" style="font-size:1.15rem;font-weight:800;color:#2563eb">₦155,000</span>
+              <span class="price-old" style="font-size:.85rem;color:#94a3b8;text-decoration:line-through">₦180,000</span>
+              <span class="discount-pct" style="font-size:.75rem;font-weight:700;color:#16a34a;background:#dcfce7;padding:2px 7px;border-radius:6px">-14%</span>
+            </div>
+            <div class="deal-progress"><div class="bar" style="width:82%"></div></div>
+            <div class="deal-sold">82 of 100 sold</div>
+            <button class="btn-cart" style="margin-top:14px" data-id="airpodspro2-deal" data-name="AirPods Pro 2nd Gen" data-price="155000" data-img="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=200&q=80">
+              <i class="bi bi-cart-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Deal 3 -->
+      <div class="col-sm-6 col-lg-4">
+        <div class="deal-card">
+          <img src="https://images.unsplash.com/photo-1556656793-08538906a9f8?auto=format&fit=crop&w=600&q=80" class="deal-img" alt="Google Pixel 9 Pro">
+          <div class="deal-body">
+            <div class="deal-timer">
+              <div class="time-box">01<span>days</span></div>
+              <div class="time-box">08<span>hrs</span></div>
+              <div class="time-box">30<span>min</span></div>
+              <div class="time-box">00<span>sec</span></div>
+            </div>
+            <div class="brand-tag">Google</div>
+            <h5 style="font-weight:700;margin-bottom:6px">Pixel 9 Pro</h5>
+            <div style="font-size:.8rem;color:#64748b;margin-bottom:10px">256GB · Porcelain · 5G</div>
+            <div class="price-row" style="display:flex;gap:8px;align-items:baseline;margin-bottom:6px">
+              <span class="price" style="font-size:1.15rem;font-weight:800;color:#2563eb">₦780,000</span>
+              <span class="price-old" style="font-size:.85rem;color:#94a3b8;text-decoration:line-through">₦920,000</span>
+              <span class="discount-pct" style="font-size:.75rem;font-weight:700;color:#16a34a;background:#dcfce7;padding:2px 7px;border-radius:6px">-15%</span>
+            </div>
+            <div class="deal-progress"><div class="bar" style="width:45%"></div></div>
+            <div class="deal-sold">45 of 100 sold</div>
+            <button class="btn-cart" style="margin-top:14px" data-id="pixel9p-deal" data-name="Google Pixel 9 Pro" data-price="780000" data-img="https://images.unsplash.com/photo-1556656793-08538906a9f8?auto=format&fit=crop&w=200&q=80">
+              <i class="bi bi-cart-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Deal 4 -->
+      <div class="col-sm-6 col-lg-4">
+        <div class="deal-card">
+          <img src="https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=600&q=80" class="deal-img" alt="Sony WH-1000XM5">
+          <div class="deal-body">
+            <div class="deal-timer">
+              <div class="time-box">02<span>days</span></div>
+              <div class="time-box">05<span>hrs</span></div>
+              <div class="time-box">10<span>min</span></div>
+              <div class="time-box">00<span>sec</span></div>
+            </div>
+            <div class="brand-tag">Sony</div>
+            <h5 style="font-weight:700;margin-bottom:6px">WH-1000XM5</h5>
+            <div style="font-size:.8rem;color:#64748b;margin-bottom:10px">Over-ear ANC · 30h battery</div>
+            <div class="price-row" style="display:flex;gap:8px;align-items:baseline;margin-bottom:6px">
+              <span class="price" style="font-size:1.15rem;font-weight:800;color:#2563eb">₦220,000</span>
+              <span class="price-old" style="font-size:.85rem;color:#94a3b8;text-decoration:line-through">₦260,000</span>
+              <span class="discount-pct" style="font-size:.75rem;font-weight:700;color:#16a34a;background:#dcfce7;padding:2px 7px;border-radius:6px">-15%</span>
+            </div>
+            <div class="deal-progress"><div class="bar" style="width:57%"></div></div>
+            <div class="deal-sold">57 of 100 sold</div>
+            <button class="btn-cart" style="margin-top:14px" data-id="sonyxm5-deal" data-name="Sony WH-1000XM5" data-price="220000" data-img="https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=200&q=80">
+              <i class="bi bi-cart-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Deal 5 -->
+      <div class="col-sm-6 col-lg-4">
+        <div class="deal-card">
+          <img src="https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?auto=format&fit=crop&w=600&q=80" class="deal-img" alt="OnePlus 12">
+          <div class="deal-body">
+            <div class="deal-timer">
+              <div class="time-box">04<span>days</span></div>
+              <div class="time-box">20<span>hrs</span></div>
+              <div class="time-box">00<span>min</span></div>
+              <div class="time-box">00<span>sec</span></div>
+            </div>
+            <div class="brand-tag">OnePlus</div>
+            <h5 style="font-weight:700;margin-bottom:6px">OnePlus 12</h5>
+            <div style="font-size:.8rem;color:#64748b;margin-bottom:10px">256GB · Silky Black · 5G</div>
+            <div class="price-row" style="display:flex;gap:8px;align-items:baseline;margin-bottom:6px">
+              <span class="price" style="font-size:1.15rem;font-weight:800;color:#2563eb">₦680,000</span>
+              <span class="price-old" style="font-size:.85rem;color:#94a3b8;text-decoration:line-through">₦750,000</span>
+              <span class="discount-pct" style="font-size:.75rem;font-weight:700;color:#16a34a;background:#dcfce7;padding:2px 7px;border-radius:6px">-9%</span>
+            </div>
+            <div class="deal-progress"><div class="bar" style="width:30%"></div></div>
+            <div class="deal-sold">30 of 100 sold</div>
+            <button class="btn-cart" style="margin-top:14px" data-id="oneplus12-deal" data-name="OnePlus 12" data-price="680000" data-img="https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?auto=format&fit=crop&w=200&q=80">
+              <i class="bi bi-cart-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Deal 6 -->
+      <div class="col-sm-6 col-lg-4">
+        <div class="deal-card">
+          <img src="https://images.unsplash.com/photo-1585060544812-6b45742d762f?auto=format&fit=crop&w=600&q=80" class="deal-img" alt="Tecno Phantom X2 Pro">
+          <div class="deal-body">
+            <div class="deal-timer">
+              <div class="time-box">00<span>days</span></div>
+              <div class="time-box">06<span>hrs</span></div>
+              <div class="time-box">22<span>min</span></div>
+              <div class="time-box">00<span>sec</span></div>
+            </div>
+            <div class="brand-tag">Tecno</div>
+            <h5 style="font-weight:700;margin-bottom:6px">Phantom X2 Pro</h5>
+            <div style="font-size:.8rem;color:#64748b;margin-bottom:10px">256GB · Stardust Grey</div>
+            <div class="price-row" style="display:flex;gap:8px;align-items:baseline;margin-bottom:6px">
+              <span class="price" style="font-size:1.15rem;font-weight:800;color:#2563eb">₦320,000</span>
+              <span class="price-old" style="font-size:.85rem;color:#94a3b8;text-decoration:line-through">₦380,000</span>
+              <span class="discount-pct" style="font-size:.75rem;font-weight:700;color:#16a34a;background:#dcfce7;padding:2px 7px;border-radius:6px">-16%</span>
+            </div>
+            <div class="deal-progress"><div class="bar" style="width:91%"></div></div>
+            <div class="deal-sold">91 of 100 sold – Almost gone!</div>
+            <button class="btn-cart" style="margin-top:14px" data-id="tecphx2p-deal" data-name="Tecno Phantom X2 Pro" data-price="320000" data-img="https://images.unsplash.com/photo-1585060544812-6b45742d762f?auto=format&fit=crop&w=200&q=80">
+              <i class="bi bi-cart-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-4">
+        <div class="footer-brand"><i class="bi bi-phone-fill"></i> PhoneHub</div>
+        <p class="footer-desc">Nigeria's most trusted destination for smartphones, accessories, and unbeatable mobile deals.</p>
+        <div class="footer-socials">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-twitter-x"></i></a>
+          <a href="#"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2">
+        <div class="footer-heading">Shop</div>
+        <ul>
+          <li><a href="Phones.html">Smartphones</a></li>
+          <li><a href="Accessories.html">Accessories</a></li>
+          <li><a href="Deals.html">Deals</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <div class="footer-heading">Support</div>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Track Order</a></li>
+          <li><a href="#">Returns</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <div class="footer-heading">Newsletter</div>
+        <p style="color:#64748b;font-size:.88rem;margin-bottom:14px">Get exclusive deals in your inbox.</p>
+        <form class="newsletter-form" style="max-width:100%">
+          <input type="email" placeholder="Your email" required>
+          <button type="submit">Go</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 PhoneHub Nigeria. All rights reserved.</span>
+      <div class="footer-payments">
+        <span class="pay-badge">Paystack</span>
+        <span class="pay-badge">Flutterwave</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

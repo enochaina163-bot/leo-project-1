@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phones – PhoneHub</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' fill='%232563eb'%3E%3Cpath d='M16 2c-2.2 0-4 1.8-4 4v2h-4c-.6 0-1 .4-1 1v12c0 .6.4 1 1 1h8c.6 0 1-.4 1-1V10h7v9c0 .6.4 1 1 1h8c.6 0 1-.4 1-1V4c0-.6-.4-1-1-1h-7V7c0-2.2-1.8-4-4-4zm0 2c1.1 0 2 .9 2 2v2H4V7c0-1.1.9-2 2-2h9z'/%3E%3C/svg%3E">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- ANNOUNCEMENT BAR -->
+<div class="announce-bar">
+  🔥 Mega Sale – Up to 30% off selected phones!
+  <a href="Deals.html"> Shop Now →</a>
+</div>
+
+<!-- NAVBAR -->
+<nav class="ph-nav navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">
+      <i class="bi bi-phone-fill"></i> PhoneHub
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav mx-auto gap-1">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="Phones.html">Phones</a></li>
+        <li class="nav-item"><a class="nav-link" href="Accessories.html">Accessories</a></li>
+        <li class="nav-item"><a class="nav-link" href="Deals.html">Deals</a></li>
+      </ul>
+      <div class="nav-actions d-flex align-items-center gap-2">
+        <button class="btn-icon" title="Search"><i class="bi bi-search"></i></button>
+        <a href="cart.html" class="btn-icon" title="Cart" style="text-decoration:none">
+          <i class="bi bi-cart3"></i>
+          <span class="cart-count" style="display:none">0</span>
+        </a>
+        <a href="sign in.html" class="btn-signin">Sign In</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <nav aria-label="breadcrumb" class="mb-3">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active">Phones</li>
+      </ol>
+    </nav>
+    <h1>Smartphones</h1>
+    <p>200+ models from the world's top brands. All original, all warranted.</p>
+  </div>
+</section>
+
+<!-- CONTENT -->
+<section class="py-section">
+  <div class="container">
+
+    <!-- Filter Bar -->
+    <div class="filter-bar mb-4">
+      <span style="font-size:.83rem;font-weight:700;color:#64748b;white-space:nowrap">Filter:</span>
+      <button class="filter-btn active">All</button>
+      <button class="filter-btn">Apple</button>
+      <button class="filter-btn">Samsung</button>
+      <button class="filter-btn">Google</button>
+      <button class="filter-btn">OnePlus</button>
+      <button class="filter-btn">Xiaomi</button>
+      <button class="filter-btn">Tecno</button>
+      <div class="ms-auto">
+        <select class="sort-select">
+          <option>Sort: Featured</option>
+          <option>Price: Low to High</option>
+          <option>Price: High to Low</option>
+          <option>Newest First</option>
+          <option>Best Rated</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Products Grid -->
+    <div class="row g-4">
+
+      <!-- iPhone 16 Pro Max -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="product-card">
+          <div class="img-wrap">
+            <span class="badge-wrap"><span class="badge-new">New</span></span>
+            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+            <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=600&q=80" alt="iPhone 16 Pro Max">
+          </div>
+          <div class="card-body">
+            <div class="brand-tag">Apple</div>
+            <h5>iPhone 16 Pro Max</h5>
+            <div class="specs">256GB · Titanium Black · 5G</div>
+            <div class="rating"><span class="stars">★★★★★</span><span class="count">(214)</span></div>
+            <div class="price-row">
+              <span class="price">₦1,250,000</span>
+              <span class="price-old">₦1,400,000</span>
+              <span class="discount-pct">-11%</span>
+            </div>
+            <button class="btn-cart" data-id="iphone16pm" data-name="iPhone 16 Pro Max" data-price="1250000" data-img="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=200&q=80">
+              <i class="bi bi-cart-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- iPhone 15 -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="product-card">
+          <div class="img-wrap">
+            <span class="badge-wrap"><span class="badge-sale">Sale</span></span>
+            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+            <img src="https://images.unsplash.com/photo-1605236453806-6ff36851218e?auto=format&fit=crop&w=600&q=80" alt="iPhone 15">
+          </div>
+          <div class="card-body">
+            <div class="brand-tag">Apple</div>
+            <h5>iPhone 15</h5>
+            <div class="specs">128GB · Pink · 5G</div>
+            <div class="rating"><span class="stars">★★★★★</span><span class="count">(508)</span></div>
+            <div class="price-row">
+              <span class="price">₦820,000</span>
+              <span class="price-old">₦960,000</span>
+              <span class="discount-pct">-15%</span>
+            </div>
+            <button class="btn-cart" data-id="iphone15" data-name="iPhone 15" data-price="820000" data-img="https://images.unsplash.com/photo-1605236453806-6ff36851218e?auto=format&fit=crop&w=200&q=80">
+              <i class="bi bi-cart-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Samsung S25 Ultra -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="product-card">
+          <div class="img-wrap">
+            <span class="badge-wrap"><span class="badge-hot">Hot</span></span>
+            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80" alt="Samsung S25 Ultra">
+          </div>
+          <div class="card-body">
+            <div class="brand-tag">Samsung</div>
+            <h5>Galaxy S25 Ultra</h5>
+            <div class="specs">512GB · Phantom Black · 5G</div>
+            <div class="rating"><span class="stars">★★★★★</span><span class="count">(389)</span></div>
+            <div class="price-row">
+              <span class="price">₦1,050,000</span>
+              <span class="price-old">₦1,180,000</span>
+              <span class="discount-pct">-11%</span>
+            </div>
+            <button class="btn-cart" data-id="sams25u" data-name="Samsung Galaxy S25 Ultra" data-price="1050000" data-img="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=200&q=80">
+              <i class="bi bi-cart-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Samsung A55 -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="product-card">
+          <div class="img-wrap">
+            <span class="badge-wrap"><span class="badge-new">New</span></span>
+            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+            <img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?auto=format&fit=crop&w=600&q=80" alt="Samsung A55">
+          </div>
+          <div class="card-body">
+            <div class="brand-tag">Samsung</div>
+            <h5>Galaxy A55 5G</h5>
+            <div class="specs">256GB · Awesome Navy · 5G</div>
+            <div class="rating"><span class="stars">★★★★☆</span><span class="count">(172)</span></div>
+            <div class="price-row">
+              <span class="price">₦420,000</span>
+              <span class="price-old">₦480,000</span>
+              <span class="discount-pct">-13%</span>
+            </div>
+            <button class="btn-cart" data-id="sama55" data-name="Samsung Galaxy A55 5G" data-price="420000" data-img="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?auto=format&fit=crop&w=200&q=80">
+              <i class="bi bi-cart-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Google Pixel 9 Pro -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="product-card">
+          <div class="img-wrap">
+            <span class="badge-wrap"><span class="badge-sale">Sale</span></span>
+            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+            <img src="https://images.unsplash.com/photo-1556656793-08538906a9f8?auto=format&fit=crop&w=600&q=80" alt="Google Pixel 9 Pro">
+          </div>
+          <div class="card-body">
+            <div class="brand-tag">Google</div>
+            <h5>Pixel 9 Pro</h5>
+            <div class="specs">256GB · Porcelain · 5G</div>
+            <div class="rating"><span class="stars">★★★★☆</span><span class="count">(127)</span></div>
+            <div class="price-row">
+              <span class="price">₦780,000</span>
+              <span class="price-old">₦920,000</span>
+              <span class="discount-pct">-15%</span>
+            </div>
+            <button class="btn-cart" data-id="pixel9p" data-name="Google Pixel 9 Pro" data-price="780000" data-img="https://images.unsplash.com/photo-1556656793-08538906a9f8?auto=format&fit=crop&w=200&q=80">
+              <i class="bi bi-cart-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- OnePlus 12 -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="product-card">
+          <div class="img-wrap">
+            <span class="badge-wrap"><span class="badge-limited">Limited</span></span>
+            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+            <img src="https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?auto=format&fit=crop&w=600&q=80" alt="OnePlus 12">
+          </div>
+          <div class="card-body">
+            <div class="brand-tag">OnePlus</div>
+            <h5>OnePlus 12</h5>
+            <div class="specs">256GB · Silky Black · 5G</div>
+            <div class="rating"><span class="stars">★★★★★</span><span class="count">(96)</span></div>
+            <div class="price-row">
+              <span class="price">₦680,000</span>
+              <span class="price-old">₦750,000</span>
+              <span class="discount-pct">-9%</span>
+            </div>
+            <button class="btn-cart" data-id="oneplus12" data-name="OnePlus 12" data-price="680000" data-img="https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?auto=format&fit=crop&w=200&q=80">
+              <i class="bi bi-cart-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Xiaomi 14 Pro -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="product-card">
+          <div class="img-wrap">
+            <span class="badge-wrap"><span class="badge-new">New</span></span>
+            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+            <img src="https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2?auto=format&fit=crop&w=600&q=80" alt="Xiaomi 14 Pro">
+          </div>
+          <div class="card-body">
+            <div class="brand-tag">Xiaomi</div>
+            <h5>Xiaomi 14 Pro</h5>
+            <div class="specs">512GB · Black · 5G</div>
+            <div class="rating"><span class="stars">★★★★☆</span><span class="count">(63)</span></div>
+            <div class="price-row">
+              <span class="price">₦760,000</span>
+              <span class="price-old">₦830,000</span>
+              <span class="discount-pct">-8%</span>
+            </div>
+            <button class="btn-cart" data-id="xia14p" data-name="Xiaomi 14 Pro" data-price="760000" data-img="https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2?auto=format&fit=crop&w=200&q=80">
+              <i class="bi bi-cart-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tecno Phantom X2 Pro -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="product-card">
+          <div class="img-wrap">
+            <span class="badge-wrap"><span class="badge-hot">Hot</span></span>
+            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+            <img src="https://images.unsplash.com/photo-1585060544812-6b45742d762f?auto=format&fit=crop&w=600&q=80" alt="Tecno Phantom X2 Pro">
+          </div>
+          <div class="card-body">
+            <div class="brand-tag">Tecno</div>
+            <h5>Phantom X2 Pro</h5>
+            <div class="specs">256GB · Stardust Grey · 4G</div>
+            <div class="rating"><span class="stars">★★★★☆</span><span class="count">(241)</span></div>
+            <div class="price-row">
+              <span class="price">₦320,000</span>
+              <span class="price-old">₦380,000</span>
+              <span class="discount-pct">-16%</span>
+            </div>
+            <button class="btn-cart" data-id="tecphx2p" data-name="Tecno Phantom X2 Pro" data-price="320000" data-img="https://images.unsplash.com/photo-1585060544812-6b45742d762f?auto=format&fit=crop&w=200&q=80">
+              <i class="bi bi-cart-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Google Pixel 8 Pro -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="product-card">
+          <div class="img-wrap">
+            <span class="badge-wrap"><span class="badge-new">New</span></span>
+            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+            <img src="https://images.unsplash.com/photo-1679836687628-63081204a3e8?auto=format&fit=crop&w=600&q=80" alt="Google Pixel 8 Pro">
+          </div>
+          <div class="card-body">
+            <div class="brand-tag">Google</div>
+            <h5>Pixel 8 Pro</h5>
+            <div class="specs">256GB · Bay · 5G</div>
+            <div class="rating"><span class="stars">★★★★☆</span><span class="count">(184)</span></div>
+            <div class="price-row">
+              <span class="price">₦980,000</span>
+              <span class="price-old">₦1,100,000</span>
+              <span class="discount-pct">-11%</span>
+            </div>
+            <button class="btn-cart" data-id="pix8p" data-name="Google Pixel 8 Pro" data-price="980000" data-img="https://images.unsplash.com/photo-1679836687628-63081204a3e8?auto=format&fit=crop&w=200&q=80">
+              <i class="bi bi-cart-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Samsung Galaxy S24 -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="product-card">
+          <div class="img-wrap">
+            <span class="badge-wrap"><span class="badge-sale">Sale</span></span>
+            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+            <img src="https://images.unsplash.com/photo-1695156774299-c3a194e0ce7d?auto=format&fit=crop&w=600&q=80" alt="Samsung Galaxy S24">
+          </div>
+          <div class="card-body">
+            <div class="brand-tag">Samsung</div>
+            <h5>Galaxy S24</h5>
+            <div class="specs">256GB · Onyx Black · 5G</div>
+            <div class="rating"><span class="stars">★★★★★</span><span class="count">(412)</span></div>
+            <div class="price-row">
+              <span class="price">₦890,000</span>
+              <span class="price-old">₦980,000</span>
+              <span class="discount-pct">-9%</span>
+            </div>
+            <button class="btn-cart" data-id="sams24" data-name="Samsung Galaxy S24" data-price="890000" data-img="https://images.unsplash.com/photo-1695156774299-c3a194e0ce7d?auto=format&fit=crop&w=200&q=80">
+              <i class="bi bi-cart-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- iPhone 14 Pro -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="product-card">
+          <div class="img-wrap">
+            <span class="badge-wrap"><span class="badge-limited">Limited</span></span>
+            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+            <img src="https://images.unsplash.com/photo-1678924353494-a2b59c2a93c4?auto=format&fit=crop&w=600&q=80" alt="iPhone 14 Pro">
+          </div>
+          <div class="card-body">
+            <div class="brand-tag">Apple</div>
+            <h5>iPhone 14 Pro</h5>
+            <div class="specs">256GB · Space Black · 5G</div>
+            <div class="rating"><span class="stars">★★★★★</span><span class="count">(326)</span></div>
+            <div class="price-row">
+              <span class="price">₦940,000</span>
+              <span class="price-old">₦1,050,000</span>
+              <span class="discount-pct">-10%</span>
+            </div>
+            <button class="btn-cart" data-id="iphone14p" data-name="iPhone 14 Pro" data-price="940000" data-img="https://images.unsplash.com/photo-1678924353494-a2b59c2a93c4?auto=format&fit=crop&w=200&q=80">
+              <i class="bi bi-cart-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Xiaomi 13T -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="product-card">
+          <div class="img-wrap">
+            <span class="badge-wrap"><span class="badge-new">New</span></span>
+            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+            <img src="https://images.unsplash.com/photo-1662428630334-1c1736e8a72e?auto=format&fit=crop&w=600&q=80" alt="Xiaomi 13T">
+          </div>
+          <div class="card-body">
+            <div class="brand-tag">Xiaomi</div>
+            <h5>Xiaomi 13T</h5>
+            <div class="specs">256GB · Alpine Blue · 5G</div>
+            <div class="rating"><span class="stars">★★★★☆</span><span class="count">(145)</span></div>
+            <div class="price-row">
+              <span class="price">₦520,000</span>
+              <span class="price-old">₦590,000</span>
+              <span class="discount-pct">-12%</span>
+            </div>
+            <button class="btn-cart" data-id="xia13t" data-name="Xiaomi 13T" data-price="520000" data-img="https://images.unsplash.com/photo-1662428630334-1c1736e8a72e?auto=format&fit=crop&w=200&q=80">
+              <i class="bi bi-cart-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- OnePlus Nord N30 -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="product-card">
+          <div class="img-wrap">
+            <span class="badge-wrap"><span class="badge-hot">Hot</span></span>
+            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+            <img src="https://images.unsplash.com/photo-1640662830445-00e8e79e8a98?auto=format&fit=crop&w=600&q=80" alt="OnePlus Nord N30">
+          </div>
+          <div class="card-body">
+            <div class="brand-tag">OnePlus</div>
+            <h5>Nord N30</h5>
+            <div class="specs">256GB · Chromatic Gray · 5G</div>
+            <div class="rating"><span class="stars">★★★★☆</span><span class="count">(98)</span></div>
+            <div class="price-row">
+              <span class="price">₦280,000</span>
+              <span class="price-old">₦320,000</span>
+              <span class="discount-pct">-13%</span>
+            </div>
+            <button class="btn-cart" data-id="opnn30" data-name="OnePlus Nord N30" data-price="280000" data-img="https://images.unsplash.com/photo-1640662830445-00e8e79e8a98?auto=format&fit=crop&w=200&q=80">
+              <i class="bi bi-cart-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tecno Camon 30 -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="product-card">
+          <div class="img-wrap">
+            <span class="badge-wrap"><span class="badge-new">New</span></span>
+            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+            <img src="https://images.unsplash.com/photo-1618022670249-45bf66d2c3d6?auto=format&fit=crop&w=600&q=80" alt="Tecno Camon 30">
+          </div>
+          <div class="card-body">
+            <div class="brand-tag">Tecno</div>
+            <h5>Camon 30</h5>
+            <div class="specs">256GB · Icelandic White · 4G</div>
+            <div class="rating"><span class="stars">★★★★☆</span><span class="count">(156)</span></div>
+            <div class="price-row">
+              <span class="price">₦210,000</span>
+              <span class="price-old">₦240,000</span>
+              <span class="discount-pct">-13%</span>
+            </div>
+            <button class="btn-cart" data-id="teccam30" data-name="Tecno Camon 30" data-price="210000" data-img="https://images.unsplash.com/photo-1618022670249-45bf66d2c3d6?auto=format&fit=crop&w=200&q=80">
+              <i class="bi bi-cart-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Pagination -->
+    <div class="d-flex justify-content-center mt-5">
+      <nav>
+        <ul class="pagination gap-2">
+          <li class="page-item"><a class="page-link" href="#" style="border-radius:8px;font-weight:600">‹</a></li>
+          <li class="page-item active"><a class="page-link" href="#" style="border-radius:8px;font-weight:600;background:#2563eb;border-color:#2563eb">1</a></li>
+          <li class="page-item"><a class="page-link" href="#" style="border-radius:8px;font-weight:600">2</a></li>
+          <li class="page-item"><a class="page-link" href="#" style="border-radius:8px;font-weight:600">3</a></li>
+          <li class="page-item"><a class="page-link" href="#" style="border-radius:8px;font-weight:600">›</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-4">
+        <div class="footer-brand"><i class="bi bi-phone-fill"></i> PhoneHub</div>
+        <p class="footer-desc">Nigeria's most trusted destination for smartphones, accessories, and unbeatable mobile deals since 2020.</p>
+        <div class="footer-socials">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-twitter-x"></i></a>
+          <a href="#"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2">
+        <div class="footer-heading">Shop</div>
+        <ul>
+          <li><a href="Phones.html">Smartphones</a></li>
+          <li><a href="Accessories.html">Accessories</a></li>
+          <li><a href="Deals.html">Deals</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <div class="footer-heading">Support</div>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Track Order</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Warranty</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <div class="footer-heading">Newsletter</div>
+        <p style="color:#64748b;font-size:.88rem;margin-bottom:14px">Get exclusive deals in your inbox.</p>
+        <form class="newsletter-form" style="max-width:100%">
+          <input type="email" placeholder="Your email" required>
+          <button type="submit">Go</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 PhoneHub Nigeria. All rights reserved.</span>
+      <div class="footer-payments">
+        <span class="pay-badge">Paystack</span>
+        <span class="pay-badge">Flutterwave</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/app.js"></script>
+<script>
+  // Filter button toggle
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+    });
+  });
+</script>
+</body>
+</html>
